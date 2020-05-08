@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GLSLProgram.cpp">
+      <Filter>shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSLShader.cpp">
+      <Filter>shaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="helper_cuda.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_cuda_gl.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_string.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="glfw_tools.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="gl_tools.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSLProgram.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSLShader.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_tools_common.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="sharedStructs.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h" />
+    <ClInclude Include="kernel.h" />
+    <ClInclude Include="cutil.hpp" />
+    <ClInclude Include="input.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="main.cu" />
+    <CudaCompile Include="rayHelpers.cu">
+      <Filter>helpers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="helpers">
+      <UniqueIdentifier>{750b8533-a0d1-4ae4-bcb3-7426757ff365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{8f7d11d4-738a-42ec-bf4e-d1d42fe27464}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
