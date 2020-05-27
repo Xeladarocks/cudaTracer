@@ -24,6 +24,6 @@
 #include <ctime>
 
 inline __device__ void getXYZCoords(int& x, int& y, int& z);
-__global__ void cudaRender(inputPointers inpointers, float* cuda_random_buffer, int imgw, int imgh, float currTime);
-inline __device__ glm::vec3 trace(Ray &ray, int depth, int idx, float* cuda_random_buffer);
-inline __device__ Intersection castRay(Ray &ray);
+__global__ void cudaRender(inputPointers inpointers, int imgw, int imgh, float currTime);
+inline __device__ glm::vec3 trace(Ray &ray, int &depth, const int &idx, inputPointers &inpointers);
+inline __device__ Intersection castRay(Ray &ray, inputPointers &inpointers);

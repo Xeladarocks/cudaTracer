@@ -55,5 +55,13 @@
     <Filter Include="shaders">
       <UniqueIdentifier>{8f7d11d4-738a-42ec-bf4e-d1d42fe27464}</UniqueIdentifier>
     </Filter>
+    <Filter Include="scenes">
+      <UniqueIdentifier>{99b20d9a-e15b-4ae6-9677-a0359273dd34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cornellBox.txt">
+      <Filter>scenes</Filter>
+    </Text>
   </ItemGroup>
 </Project>

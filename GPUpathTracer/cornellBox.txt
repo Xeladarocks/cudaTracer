@@ -1,0 +1,32 @@
+
+
+Sphere( vec3(0, 5.0, 0), 3.0, Material( vec3(255, 255, 0), 1.0, 0.0, 0.0 ) );
+//Sphere( (2, 100, 0), 50, Material({glm::vec3(255, 255, 255), 0.0f, 0.0f, 25.0f}) });
+
+/** Triangles **/
+
+// ceiling light
+scene_triangles[0] = Triangle({ glm::vec3(-5, 20 - 1, -5), glm::vec3(-5, 20 - 1, 5), glm::vec3(5, 20 - 1, 5), Material({glm::vec3(255, 147, 68), 0.0f, 0.0f, 5.0f}) });
+scene_triangles[1] = Triangle({ glm::vec3(5, 20 - 1, 5), glm::vec3(5, 20 - 1, -5), glm::vec3(-5, 20 - 1, -5), Material({glm::vec3(255, 147, 68), 0.0f, 0.0f, 5.0f}) });
+// back light
+scene_triangles[6] = Triangle({ glm::vec3(-10, 0, -30), glm::vec3(10, 0, -30), glm::vec3(10, 20, -30), Material({glm::vec3(255, 147, 68), 0.0f, 0.0f, 1.0f}) });
+scene_triangles[7] = Triangle({ glm::vec3(10, 20, -30), glm::vec3(-10, 20, -30), glm::vec3(-10, 0, -30), Material({glm::vec3(255, 147, 68), 0.0f, 0.0f, 1.0f}) });
+
+// left wall
+scene_triangles[2] = Triangle({ glm::vec3(-10, 0, 10), glm::vec3(-10, 0, -10), glm::vec3(-10, 20, -10), Material({glm::vec3(255, 50, 50), 1.0f, 0.0f, 0.0f}) });
+scene_triangles[3] = Triangle({ glm::vec3(-10, 20, -10), glm::vec3(-10, 20, 10), glm::vec3(-10, 0, 10), Material({glm::vec3(255, 50, 50), 1.0f, 0.0f, 0.0f}) });
+// right wall
+scene_triangles[4] = Triangle({ glm::vec3(10, 0, -10), glm::vec3(10, 0, 10), glm::vec3(10, 20, 10), Material({glm::vec3(50, 255, 50), 1.0f, 0.0f, 0.0f}) });
+scene_triangles[5] = Triangle({ glm::vec3(10, 20, 10), glm::vec3(10, 20, -10), glm::vec3(10, 0, -10), Material({glm::vec3(50, 255, 50), 1.0f, 0.0f, 0.0f}) });
+// across
+scene_triangles[8] = Triangle({ glm::vec3(-10, 0, 10), glm::vec3(10, 20, 10), glm::vec3(10, 0, 10), Material({glm::vec3(255, 255, 255), 1.0f, 0.0f, 0.0f}) });
+scene_triangles[9] = Triangle({ glm::vec3(10, 20, 10), glm::vec3(-10, 0, 10), glm::vec3(-10, 20, 10), Material({glm::vec3(255, 255, 255), 1.0f, 0.0f, 0.0f}) });
+// ceiling
+scene_triangles[10] = Triangle({ glm::vec3(-10, 20, -10), glm::vec3(10, 20, -10), glm::vec3(10, 20, 10), Material({glm::vec3(255, 255, 255), 1.0f, 0.0f, 0.0f}) });
+scene_triangles[11] = Triangle({ glm::vec3(10, 20, 10), glm::vec3(-10, 20, 10), glm::vec3(-10, 20, -10), Material({glm::vec3(255, 255, 255), 1.0f, 0.0f, 0.0f}) });
+/** End Triangles **/
+
+/** Planes **/
+size_scene_planes = sizeof(Plane) * NUM_PLANES;
+scene_planes[0] = Plane({ glm::vec3(0, 0.01, 0), glm::vec3(0, 1, 0), Material({glm::vec3(255, 255, 255), 1.0f, 0.0f, 0.0f}) });
+/** End Planes **/
